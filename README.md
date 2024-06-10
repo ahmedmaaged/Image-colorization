@@ -6,8 +6,9 @@ This repository contains the code for an image colorization project using autoen
 
 - [Introduction](#introduction)
 - [Dataset](#dataset)
+- [Auto Encoders](#auto-encoders)
 - [Model Architecture](#model-architecture)
-
+  
 ## Introduction
 
 Image colorization is a fascinating application of deep learning where the goal is to add color to black and white images. This project utilizes autoencoders to achieve image colorization. Autoencoders are neural networks that aim to learn a compressed representation of input data and then reconstruct the data from this representation.
@@ -20,7 +21,7 @@ The CIFAR-10 dataset is a widely used dataset for machine learning and computer 
 
 For this project, the images are first converted to greyscale and then used as input to the autoencoder. The autoencoder then learns to predict the color version of the greyscale images.
 
-## Model Architecture
+## Auto Encoders
 
 The model architecture for this project consists of a convolutional autoencoder. The encoder part of the network compresses the input greyscale image into a lower-dimensional representation, and the decoder part reconstructs the color image from this representation. The architecture can be summarized as follows:
 
@@ -40,5 +41,6 @@ The decoder reconstructs the color image from the compact latent representation.
 - **Activation Layer**: Applies a non-linear activation function (e.g., ReLU).
 - **UpSampling2D Layer**: Upsamples the input by repeating the rows and columns.
 
-### Model Architecture Diagram
-![Autoencoders Architecture](assets/autoencoder_architecture.png)
+## Model Architecture 
+
+![Model Architecture](model_architecture.png)
